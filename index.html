@@ -1,0 +1,13 @@
+<script>
+
+    navigator.geolocation.getCurrentPosition(
+              (p) => {
+                let lat = p.coords.latitude;
+                let lng = p.coords.longitude;
+                console.log({lat, lng});
+              },
+              (err) => {
+                cobsole.error(err);
+              }
+            );
+</script>
